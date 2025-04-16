@@ -13,8 +13,8 @@ def game():
     while True:
         attempts += 1  # Increment the attempt counter
         
-        # Option for the player to reveal the answer after 3 attempts
-        if attempts == 3:
+        # Option for the player to reveal the answer after 4 attempts
+        if attempts == 4:
             UI = input("At any point, you can type '7129' to know the answer. Wanna know it now? Yes/No: ").strip().lower()
             if UI == "yes":
                 print(f"The secret number was: {secret_number}")
