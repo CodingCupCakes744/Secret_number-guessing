@@ -49,3 +49,5 @@ def game():
                 break  
 
 game()
+
+"""I just wanna say that this is not AI generated...I created the code myself and understand how it works and I only used AI for making the dialogues better"""
