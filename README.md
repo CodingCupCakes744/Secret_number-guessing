@@ -2,12 +2,12 @@ import random
 
 def game():
     secret_number = random.randint(1, 50) 
-    attempts = 1  # Initialize the attempts counter
+    attempts = 1  # Initialize the attempts 
 
     print("Welcome to the Secret Number Guessing Game!")
     print("Try to guess the secret number between 1 and 50. You'll get hints after each guess.")
     
-    # First guess with a special message
+    
     guess = int(input(f"Attempt {attempts}: Guess a number between 1 and 50: "))
     
     while True:
@@ -19,6 +19,8 @@ def game():
             if UI == "yes":
                 print(f"The secret number was: {secret_number}")
                 break  # Exit the loop after revealing the answer
+            if UI == "no":
+                print("Alright,continue!")     
 
         
         if guess == secret_number:
@@ -36,7 +38,7 @@ def game():
             guess = int(input(f"Attempt {attempts}: "))
             if guess == 7129:
                 print(f"The secret number was {secret_number}")
-                break  # Exit the loop if the player uses the cheat code
+                break  
 
         
         elif guess < secret_number:
@@ -44,9 +46,6 @@ def game():
             guess = int(input(f"Attempt {attempts}: "))
             if guess == 7129:
                 print(f"The secret number was {secret_number}")
-                break  # Exit the loop if the player uses the cheat code
+                break  
 
 game()
-
-
-'''I just wanna say that this is not AI generated...i created all the code myself and know how it works and only took help of AI for better dialogues and grammar'''
